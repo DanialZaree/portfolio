@@ -53,7 +53,7 @@ export default function Hero() {
         <div className="title text-center 2xl:py-16 flex justify-center items-center w-full">
           <h1
             ref={(el) => (titles.current[1] = el)}
-            className="translate-y-96 font-outline-3 md:font-outline-4 text-transparent overflow-visible text-center w-full"
+            className="translate-y-96 font-outline-1 sm:font-outline-2 md:font-outline-4 text-transparent overflow-visible text-center w-full"
           >
             Hey, I&apos;m Dani
           </h1>
