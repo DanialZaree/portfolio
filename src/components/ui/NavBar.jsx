@@ -79,7 +79,7 @@ export default function NavBar({ sectionRefs }) {
         <span
           className="text-xl md:text-2xl font-black tracking-tighter font-grotesk"
         >
-          Danial<span className="text-secondary-600 group-hover:text-secondary-400">.</span>z
+          Danial<span className="text-secondary-600">.</span>Z
         </span>
       </a>
       <nav className="space-x-7 font-grotesk text-body-3 sm:block">
