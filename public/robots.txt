@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://danialzaree.dev/sitemap.xml
+Sitemap: https://thedanial.cv/sitemap.xml
+Sitemap: https://danial.is-a.dev/sitemap.xml

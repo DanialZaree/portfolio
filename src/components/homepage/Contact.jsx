@@ -29,17 +29,20 @@ export default function Contact() {
   const contactSection = useRef(null);
 
   useEffect(() => {
-    ScrollTrigger.create({
-      trigger: contactSection.current,
-      start: "180px bottom",
-      animation: gsap
-        .timeline()
-        .to(heading.current, { opacity: 1, y: 0, ease: "power4.out", duration: 1.25 }, 0)
-        .to(body.current, { opacity: 1, y: 0, ease: "power4.out", duration: 1.25 }, 0.2),
-      toggleActions: "play none none none",
+    const ctx = gsap.context(() => {
+      ScrollTrigger.create({
+        trigger: contactSection.current,
+        start: "180px bottom",
+        animation: gsap
+          .timeline()
+          .to(heading.current, { opacity: 1, y: 0, ease: "power4.out", duration: 1.25 }, 0)
+          .to(body.current, { opacity: 1, y: 0, ease: "power4.out", duration: 1.25 }, 0.2),
+        toggleActions: "play none none none",
+      });
     });
-    ScrollTrigger.refresh();
-  }, [contactSection]);
+
+    return () => ctx.revert();
+  }, []);
 
   useEffect(() => {
     const timer = setInterval(() => {

@@ -11,14 +11,14 @@ export default function NavBar({ sectionRefs }) {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    // Initialize smooth scrolling with Lenis
+    // Initialize smooth scrolling with Lenis synchronized to GSAP ticker to eliminate forced reflow
     const lenis = new Lenis();
-    let rafId;
-    function raf(time) {
-      lenis.raf(time);
-      rafId = requestAnimationFrame(raf);
-    }
-    rafId = requestAnimationFrame(raf);
+    lenis.on("scroll", ScrollTrigger.update);
+    const updateTicker = (time) => {
+      lenis.raf(time * 1000);
+    };
+    gsap.ticker.add(updateTicker);
+    gsap.ticker.lagSmoothing(0);
 
     // Initial entrance animation & triggers within gsap context
     const ctx = gsap.context(() => {
@@ -49,7 +49,7 @@ export default function NavBar({ sectionRefs }) {
     });
 
     return () => {
-      cancelAnimationFrame(rafId);
+      gsap.ticker.remove(updateTicker);
       lenis.destroy();
       ctx.revert();
     };

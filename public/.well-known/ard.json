@@ -1,0 +1,29 @@
+{
+  "specVersion": "1.0",
+  "entries": [
+    {
+      "identifier": "urn:air:thedanial.cv:portfolio:skills",
+      "displayName": "Danial Zaree — Front-End Developer Portfolio & Skills",
+      "type": "text/markdown; profile=\"urn:air:agent-skills\"",
+      "url": "https://thedanial.cv/llms.txt",
+      "description": "Front-End Developer portfolio, skill set, and project showcase for Danial Zaree.",
+      "representativeQueries": [
+        "Danial Zaree front-end developer portfolio",
+        "Danial Zaree web applications and projects",
+        "Danial Zaree React Next.js TypeScript developer"
+      ]
+    },
+    {
+      "identifier": "urn:air:danial.is-a.dev:portfolio:skills",
+      "displayName": "Danial Zaree — Developer Portfolio & Skills",
+      "type": "text/markdown; profile=\"urn:air:agent-skills\"",
+      "url": "https://danial.is-a.dev/llms.txt",
+      "description": "Front-End Developer portfolio, skill set, and project showcase for Danial Zaree.",
+      "representativeQueries": [
+        "Danial Zaree front-end developer portfolio",
+        "Danial Zaree web applications and projects",
+        "Danial Zaree React Next.js TypeScript developer"
+      ]
+    }
+  ]
+}

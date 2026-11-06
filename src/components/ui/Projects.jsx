@@ -1,27 +1,66 @@
+import { useEffect, useRef, useState } from "react";
+
 export default function Projects({ name, img, video, alt, type, link, year, tools }) {
+  const containerRef = useRef(null);
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    if (!video) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setInView(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "400px" }
+    );
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, [video]);
+
   return (
     <div>
       <a
         target="_blank"
         rel="noreferrer"
         href={link}
+        aria-label={`View ${name} project`}
         className="img group inline-block w-full overflow-hidden duration-200 ease-linear hover:rounded-3xl"
       >
         {video ? (
-          <video
-            className="w-full h-auto aspect-video object-cover duration-700 ease-in-out group-hover:scale-105"
-            src={video}
-            autoPlay
-            loop
-            muted
-            playsInline
-            poster={img}
-          />
+          <div ref={containerRef} className="w-full h-auto aspect-video">
+            {inView ? (
+              <video
+                className="w-full h-auto aspect-video object-cover duration-700 ease-in-out group-hover:scale-105"
+                src={video}
+                autoPlay
+                loop
+                muted
+                playsInline
+                poster={img}
+              />
+            ) : (
+              <img
+                className="w-full h-auto aspect-video object-cover duration-700 ease-in-out group-hover:scale-105"
+                src={img}
+                alt={alt}
+                loading="lazy"
+                width="800"
+                height="450"
+              />
+            )}
+          </div>
         ) : (
           <img
             className="w-full h-auto aspect-[16/10] object-cover duration-700 ease-in-out group-hover:scale-105"
             src={img}
             alt={alt}
+            loading="lazy"
             width="800"
             height="500"
           />

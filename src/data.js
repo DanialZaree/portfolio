@@ -1,8 +1,8 @@
 // projectsData.js
-import orbi from '/src/assets/images/orbi-desktop.png';
+import orbi from '/src/assets/images/orbi-desktop.webp';
 import bineti from '/src/assets/images/bineti-desktop.avif';
-import boblo from '/src/assets/images/boblo-desktop.png';
-import pulseplay from '/src/assets/images/pulseplay-demo.png';
+import boblo from '/src/assets/images/boblo-desktop.webp';
+import pulseplay from '/src/assets/images/pulseplay-demo.webp';
 
 const projectsData = [
   {

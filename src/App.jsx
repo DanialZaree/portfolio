@@ -36,7 +36,6 @@ const App = () => {
           });
         });
       });
-      ScrollTrigger.refresh();
     });
 
     return () => ctx.revert();

@@ -1,0 +1,36 @@
+# Danial Zaree — Front-End Developer
+
+> Front-End Developer based in Hamedan, Iran with 4 years of professional experience specializing in building robust, scalable, and user-friendly web applications through clean code and modern digital engineering.
+
+## Summary
+
+Danial Zaree is a dedicated Front-End Developer specializing in building modern, high-performance web applications and intuitive interfaces. Driven by a commitment to clean architecture, solid engineering, and effective problem-solving, he excels at translating complex concepts into elegant digital solutions.
+
+- Primary Website: https://thedanial.cv/
+- Alternate Portfolio: https://danial.is-a.dev/
+- GitHub: https://github.com/DanialZaree
+- LinkedIn: https://www.linkedin.com/in/DanialZaree
+- Telegram: https://t.me/Danialzaree0
+- Email: danialzaree0@gmail.com
+
+## Technical Skills
+
+- **Core & Languages**: JavaScript (ES6+), TypeScript, HTML5, CSS3
+- **Frameworks & UI**: React 18, Next.js, Tailwind CSS, Zustand
+- **Animations & Interaction**: GSAP (GreenSock), ScrollTrigger, Lenis Smooth Scroll
+- **Architecture & APIs**: REST APIs, WebSockets, State Management, UI/UX Architecture, Web Performance Optimization
+
+## Featured Projects
+
+- [ORBI AI Assistant](https://chat.orbiai.ir): Conversational AI assistant and web application built with React, JavaScript, TailwindCSS, and AI APIs.
+- [biNeti — Web Suite](https://bineti.ir): Iranian web tools suite and open-source platform built with Next.js, TypeScript, TailwindCSS, and React.
+- [Tweeter (Boblo)](https://boblo.ir): Social microblogging web application built with TypeScript, Next.js, Prisma, and TailwindCSS.
+- [PulsePlay Music Player](https://github.com/DanialZaree/pulsePlay): Cross-platform desktop audio streaming application built with TypeScript, React, Tauri, and Web Audio APIs.
+
+## Contact & Profiles
+
+- [GitHub Profile](https://github.com/DanialZaree): Open-source projects, source code, and repositories.
+- [LinkedIn](https://www.linkedin.com/in/DanialZaree): Professional history and networking.
+- [Telegram](https://t.me/Danialzaree0): Direct instant messaging and collaboration.
+- [Email Danial](mailto:danialzaree0@gmail.com): Direct business and hiring inquiries.
+
