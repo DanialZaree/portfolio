@@ -50,21 +50,21 @@ export default function Hero() {
             Hey, I&apos;m Dani
           </h1>
         </div>
-        <div className="title text-center 2xl:py-16 flex justify-center items-center w-full" aria-hidden="true">
-          <span
+        <div className="title text-center 2xl:py-16 flex justify-center items-center w-full">
+          <h1
             ref={(el) => (titles.current[1] = el)}
-            className="translate-y-96 font-outline-1 sm:font-outline-2 md:font-outline-4 text-transparent overflow-visible text-center w-full block"
+            className="translate-y-96 font-outline-1 sm:font-outline-2 md:font-outline-4 text-transparent overflow-visible text-center w-full"
           >
             Hey, I&apos;m Dani
-          </span>
+          </h1>
         </div>
-        <div className="title text-center 2xl:py-16 flex justify-center items-center w-full" aria-hidden="true">
-          <span
+        <div className="title text-center 2xl:py-16 flex justify-center items-center w-full">
+          <h1
             ref={(el) => (titles.current[2] = el)}
-            className="translate-y-96 text-center w-full block"
+            className="translate-y-96 text-center w-full"
           >
             Hey, I&apos;m Dani
-          </span>
+          </h1>
         </div>
       </div>
       <div
